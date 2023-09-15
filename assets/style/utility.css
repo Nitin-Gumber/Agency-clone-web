@@ -1,0 +1,78 @@
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+p {
+  font-size: 1rem;
+
+  color: #959cb1;
+  line-height: 1.5rem;
+}
+
+h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #1d2144;
+  line-height: 3.6rem;
+}
+
+.pri-btn {
+  background-color: #4a6cf7;
+  border-radius: 50rem;
+  cursor: pointer;
+}
+
+.pri-btn a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.sec-btn {
+  border-radius: 0.5rem;
+  background-color: #4a6cf7;
+  cursor: pointer;
+}
+
+.cur-p {
+  cursor: pointer;
+}
+
+.sec-btn a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.padd-top {
+  padding-top: 9rem;
+}
+
+.padd-bott {
+  padding-bottom: 9rem;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+.anim {
+  animation: moveup 0.7s ease-in-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes moveup {
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

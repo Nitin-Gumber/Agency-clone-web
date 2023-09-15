@@ -1,0 +1,624 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --pri-color: #4a6cf7;
+  --sec-color: #959cb1;
+  --tri-color: #1d2144;
+  --four-color: #fff;
+}
+
+.nav-bar {
+  background-color: #fff;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: #fff;
+  padding: 0rem 7rem;
+  width: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.nav-left span img {
+  width: 11rem;
+}
+
+.nav-list ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.nav-list ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  transition: all 0.2s linear;
+}
+
+.nav-list ul li a:hover {
+  color: #4a6cf7;
+}
+
+.nav-right .pri-btn {
+  padding: 0.9rem 2.4rem;
+}
+
+.header-container {
+  padding-top: 9.5rem;
+  display: flex;
+}
+
+.header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.header-left h1 {
+  width: 33rem;
+}
+
+.header-left p {
+  width: 30rem;
+}
+
+.header-left .download-sec {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 1rem;
+}
+
+.header-left .sec-btn {
+  padding: 1.2rem 2.5rem;
+}
+
+.header-left .download-sec span {
+  margin-left: -1.5rem;
+  transition: all 0.2s linear;
+}
+
+.header-left .download-sec span p:hover {
+  color: #4a6cf7;
+}
+
+.header-left .client-sec {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 3rem;
+}
+
+.header-left .client-sec p {
+  font-size: 0.8rem;
+  width: 7.5rem;
+}
+
+.lin {
+  width: 2rem;
+  height: 0.1rem;
+  background-color: #959cb1;
+}
+
+.header-left .client-img {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-left .client-img img {
+  width: 9.7rem;
+}
+
+.header-right .header-img-1 {
+  width: 6rem;
+  position: relative;
+  left: 2.7rem;
+  top: 28.2rem;
+  z-index: -1;
+}
+
+.header-right .header-img-2 {
+  position: absolute;
+  right: 7rem;
+  z-index: -1;
+}
+
+.about-sec {
+  display: flex;
+}
+
+.about-sec .about-left {
+  width: 46rem;
+}
+
+.about-sec .about-left h3 {
+  color: var(--pri-color);
+}
+
+.about-sec .about-left h1 {
+  width: 25rem;
+}
+
+.about-sec .about-left p {
+  width: 40rem;
+  padding-top: 1.5rem;
+  font-weight: 550;
+}
+
+.about-sec .about-right h2 {
+  font-size: 2rem;
+  font-weight: 550;
+}
+
+.about-sec .about-right p {
+  font-weight: 550;
+  padding-top: 1.5rem;
+  width: 33rem;
+}
+
+.about-sec .about-right .about-right-icons i {
+  font-size: 1rem;
+  color: var(--sec-color);
+  border: 0.5px solid var(--sec-color);
+  border-radius: 50rem;
+  padding: 0.4rem 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.about-sec .about-right .about-right-icons i:hover {
+  background-color: var(--pri-color);
+  color: var(--four-color);
+}
+
+.services-sec-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.services-sec {
+  width: 100%;
+  height: 75rem;
+  background-color: #090e34;
+  margin-bottom: 9rem;
+}
+
+.services-sec .left-service-sec h3 {
+  color: var(--pri-color);
+}
+
+.services-sec .left-service-sec h1 {
+  color: var(--four-color);
+  width: 40rem;
+  line-height: 3rem;
+}
+
+.services-sec .right-service-sec a {
+  color: var(--four-color);
+  font-size: 1.2rem;
+}
+
+.services-sec .right-service-sec a:hover {
+  color: var(--pri-color);
+}
+
+.services-sec .service-sec-row {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services-sec .service-sec-col {
+  background-color: var(--four-color);
+  width: 25.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.services-sec .service-sec-col img {
+  width: 25.5rem;
+}
+
+.services-sec .service-sec-col h3 {
+  padding-top: 3rem;
+  padding-left: 2rem;
+  color: var(--tri-color);
+  cursor: pointer;
+}
+
+.services-sec .service-sec-col h3:hover {
+  color: var(--pri-color);
+}
+
+.services-sec .service-sec-col p {
+  padding-top: 1rem;
+  padding-left: 2rem;
+  width: 23rem;
+}
+
+.services-sec .service-sec-col p::after {
+  content: "";
+  display: block;
+  width: 21rem;
+  height: 0.1px;
+  background-color: var(--sec-color);
+  opacity: 50%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.services-sec .service-sec-col h4 {
+  padding-left: 2rem;
+  color: var(--sec-color);
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+
+.services-sec .service-sec-col h4:hover {
+  color: var(--pri-color);
+  cursor: pointer;
+}
+
+.color-bg {
+  background-color: #f8f9ff;
+  margin-top: 9rem;
+}
+
+.service-work-sec {
+  text-align: center;
+  width: 41rem;
+  margin: auto;
+  padding-top: 9rem;
+  padding-bottom: 3rem;
+}
+
+.service-work-sec h3 {
+  color: var(--pri-color);
+}
+
+.service-work-sec p {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-top: 1rem;
+}
+
+.service-work-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.service-work-btn .pri-btn {
+  padding: 0.6rem 1.5rem;
+  background-color: #f8f9ff;
+  text-decoration: none;
+  color: var(--sec-color);
+  font-size: 1rem;
+}
+
+.service-work-btn .pri-btn:hover {
+  background-color: var(--pri-color);
+  color: var(--four-color);
+}
+
+.job-portal {
+  width: 70%;
+  margin: auto;
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  padding-top: 3rem;
+}
+
+.job-portal img {
+  width: 32rem;
+}
+
+.job-portal h3 {
+  padding-top: 2rem;
+}
+
+.job-portal h3:hover {
+  color: var(--pri-color);
+  cursor: pointer;
+}
+
+.job-portal p {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 550;
+}
+
+.blue-bg {
+  background-color: #090e34;
+  height: 33rem;
+  position: relative;
+  z-index: -1;
+}
+
+.blue-bg .b-container {
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.blue-bg .b-container h1 {
+  color: var(--four-color);
+  font-size: 2rem;
+}
+
+.blue-bg .b-container p {
+  font-weight: 550;
+  font-size: 1.1rem;
+}
+
+.laibrary-sec {
+  padding-top: 4rem;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 4rem;
+}
+
+.laibrary-img-sec img {
+  width: 11rem;
+  filter: brightness(40%);
+}
+
+.laibrary-img-sec img:hover {
+  filter: brightness(100%);
+}
+
+.blu-bg-container {
+  background-color: #4a6cf7;
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.blu-bg-container h1 {
+  color: var(--four-color);
+  padding-top: 2rem;
+  font-size: 2.5rem;
+}
+
+.blu-bg-container .input-search {
+  background-color: #728cf5;
+  width: 30rem;
+  margin-top: 2rem;
+  padding: 0.8rem 0rem;
+  border-radius: 60rem;
+}
+
+.blu-bg-container .input-search input {
+  width: 20rem;
+  border: none;
+  outline: none;
+  padding-left: 0.8rem;
+  font-size: 1rem;
+  background-color: #728cf5;
+  color: var(--four-color);
+}
+
+.blu-bg-container .input-search button {
+  background-color: var(--four-color);
+  border: none;
+  outline: none;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border-radius: 60rem;
+  color: var(--pri-color);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.blu-bg-container .input-search input::placeholder {
+  color: var(--four-color);
+}
+
+.team-sec {
+  display: flex;
+  justify-content: center;
+
+  text-align: center;
+  padding-top: 19rem;
+}
+
+.team-sec h3 {
+  color: var(--pri-color);
+}
+
+.team-sec p {
+  width: 32rem;
+}
+
+.team-sec-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.team-sec-col {
+  padding-top: 4rem;
+}
+
+.team-sec-col img {
+  width: 19rem;
+  border-radius: 0.5rem;
+  position: relative;
+  z-index: -1;
+}
+
+.team-sec-col .team-deatial {
+  width: 17rem;
+  height: 5.5rem;
+  background-color: var(--four-color);
+  position: relative;
+  top: -6.5rem;
+  left: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: -1;
+}
+
+.team-sec-col .team-deatial {
+  position: relative;
+  top: -102px;
+  padding-top: 4rem;
+}
+
+.team-sec-col .team-deatial .bottom-img {
+  width: 5rem;
+  position: relative;
+  bottom: 2px;
+  left: -105px;
+}
+
+.team-sec-col .team-deatial .upper-img {
+  width: 1rem;
+  position: relative;
+  bottom: 99px;
+  left: 126px;
+  border-radius: 0rem;
+}
+
+.price-sec .price-over {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.price-sec .price-over h3 {
+  color: var(--pri-color);
+}
+
+.price-sec .price-over p {
+  width: 32rem;
+  padding-top: 0.8rem;
+  text-align: center;
+}
+
+.price-sec-cards-row {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-sec-cards-col {
+  width: 25.5rem;
+  height: 38.5rem;
+  background-color: var(--four-color);
+  border: #4a6cf7 0.1px solid;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 3rem;
+}
+
+.price-sec-cards-col h3 {
+  color: var(--pri-color);
+  padding-bottom: 1rem;
+}
+
+.price-details {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.price-sec-cards-col p {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 20rem;
+}
+
+.price-sec-cards-col .lin {
+  content: "";
+  display: block;
+  width: 19rem;
+  height: 0.1px;
+  background-color: var(--sec-color);
+  opacity: 20%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.price-sec-cards-col .service-details p {
+  padding-top: 0rem;
+  padding-bottom: 0.5rem;
+  width: 20rem;
+}
+
+.price-sec-cards-col .service-btn {
+  padding: 1rem 5rem;
+  border-radius: 0.5rem;
+  background-color: var(--four-color);
+  border: var(--pri-color) 0.1px solid;
+  margin-top: 2rem;
+}
+
+.price-sec-cards-col .service-btn a {
+  color: var(--pri-color);
+}
+
+.price-sec-cards-col .service-btn:hover {
+  background-color: var(--pri-color);
+}
+
+.price-sec-cards-col .service-btn:hover a {
+  color: var(--four-color);
+}
+
+.lower-img {
+  width: 5rem;
+  position: relative;
+  bottom: 540px;
+  left: 280px;
+  z-index: -1;
+}
+
+.upp-img {
+  width: 2.5rem;
+  position: relative;
+  bottom: 643px;
+  left: 214px;
+  z-index: -1;
+}
